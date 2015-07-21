@@ -12,6 +12,7 @@ namespace MvcMovie.Models
         public int ID { get; set; }
         public string Title { get; set; }
 
+        // Changed the release date format so that  it no longer includes a time of day, and the date will be formatted correctly.
         [Display(Name = "Release Date")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
